@@ -1,3 +1,4 @@
+const { json } = require('express')
 const express = require('express')
 const app = express()
 
@@ -50,10 +51,16 @@ app.post('/create', (req, res) => {
 
 })
 
-const notes = ['Some Title', 'Some Title 2']
 
 app.get('/notes', (req, res) =>{
-    res.render('notes', {notes: notes})
+    fs.readFile('./data/notes.json', (err, data) => {
+        if (err) throw err 
+
+        const notes = JSON.parse(data)
+
+        res.render('notes', {notes: notes})
+
+    })
 })
 
 app.get('/notes/detail', (req,res) =>{
