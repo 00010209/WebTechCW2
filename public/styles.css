@@ -1,0 +1,55 @@
+:root {
+    font-size: 18px;
+    color: #152018;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color:  #E2F216 ;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+/* Home Page Styling */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.intro-msg {
+    font-size: 2.2rem;
+    max-width: 70%;
+    padding: 100px 0 30px 0;
+}
+
+.featured {
+    display: inline-block;
+    padding: 10px 20px;
+    background: salmon;
+    color: #fff;
+    
+}
