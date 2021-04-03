@@ -53,3 +53,29 @@ a:hover{
     color: #fff;
     
 }
+
+/* Styling Create Page */
+
+.form  {
+    max-width: 60%;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.btn{
+    display: inline-block;
+    background: salmon;
+    color: #fff;
+    font-size: 1.3rem;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
