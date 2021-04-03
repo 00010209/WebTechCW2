@@ -24,7 +24,7 @@ app.post('/create', (req, res) => {
     const author = req.body.author
     const description = req.body.description
     
-    if (title.trim() === '' && description.trim() === '' && author.trim() === ''){
+    if (title.trim() === '' && author.trim() === '' && description.trim() === ''){
         res.render('create', { error: true })
     } else {
         fs.readFile('./data/notes.json', (err, data) => {
