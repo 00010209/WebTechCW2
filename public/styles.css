@@ -33,7 +33,7 @@ a:hover{
     padding: 5px 10px;
 }
 
-/* Home Page Styling */
+/* --------------------------------------------------   Home Page Styling   ---------------------------------------------*/
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -54,7 +54,7 @@ a:hover{
     
 }
 
-/* Styling Create Page */
+/* ------------------------------------------------   Styling Create Page  -------------------------------------*/
 
 .form  {
     max-width: 60%;
@@ -80,7 +80,7 @@ a:hover{
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Notes page Styles*/
+/* --------------------------------------------------- Notes page Styles  -------------------------------------------*/
 
 .note-wrapper{
     display: flex;
