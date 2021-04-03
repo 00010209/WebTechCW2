@@ -79,3 +79,26 @@ a:hover{
     padding: 10px 20px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* Notes page Styles*/
+
+.note-wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid salmon;
+}
+
+.note {
+    font-size: 1.4rem;
+}
+
+.delete{
+    display: inline-block;
+    padding: 5px 10px;
+    background: salmon;
+    color: #fff;
+    border-radius: 10px;
+}

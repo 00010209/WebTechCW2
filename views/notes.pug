@@ -1,0 +1,10 @@
+extends layout.pug 
+
+block content 
+  div.container 
+    h1 All notes
+
+    each note in notes 
+      div.note-wrapper 
+        a.note(href='#')= note
+        a.delete(href='#') Delete
