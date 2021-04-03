@@ -20,6 +20,10 @@ app.get('/create', (req, res) => {
     res.render('create')
 })
 
+app.get('/about', (req, res) => {
+    res.render('about')
+})
+
 app.post('/create', (req, res) => {
     const title = req.body.title
     const author = req.body.author
