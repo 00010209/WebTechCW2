@@ -102,3 +102,22 @@ a:hover{
     color: #fff;
     border-radius: 10px;
 }
+
+/* Error/Success Message styles */
+.error{
+    display: inline-block;
+    padding: 15px;
+    border: 1px dotted red;
+    font-size: 1.5rem;
+    color: red;
+    margin: 10px 0;
+}
+
+.success{
+    display: inline-block;
+    padding: 15px;
+    border: 1px dotted green;
+    font-size: 1.5rem;
+    color: green;
+    margin: 10px 0;
+}

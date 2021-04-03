@@ -3,14 +3,21 @@ extends layout.pug
 block content 
   div.container 
     h1 Create note 
+
+    if error 
+      p.error Some error has occured 
+
+    if success 
+      p.success Note has successfully been created! 
+      
     form.form(action="/create" method='POST') 
       label Title 
       input.input(type="text" name='title')
 
       label Author 
-      input.input(type="text", name="author")
+      input.input(type="text" name="author")
 
       label Description
-      textarea.input( type="text" name="description" )   
+      textarea.input(type="text" name="description")   
 
       button.btn Create Note
