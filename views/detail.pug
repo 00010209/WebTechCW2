@@ -2,6 +2,7 @@ extends layout.pug
 
 block content 
   div.container 
-    h1.title #{ note.title }
-    p.author #{ note.author }
+    h1.title.detail-title Title: #{ note.title }
+    p.author Author: #{ note.author }
+    p.detail-par Description:
     p.description #{ note.description }

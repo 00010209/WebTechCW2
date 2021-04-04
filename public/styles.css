@@ -33,7 +33,7 @@ a {
 }
 
 a:hover{
-    color:  yellow ;
+    color:  salmon;
 }
 
 .nav a {
@@ -62,8 +62,8 @@ a:hover{
     border-radius: 10px;
 }
 
-.featured:hover {
-    background-color: gray;
+.featured:hover, .delete:hover, .btn:hover {
+    background-color: #307797;
     color: #fff;
 }
 
@@ -94,14 +94,17 @@ a:hover{
 
 .btn{
     display: inline-block;
-    background: salmon;
+    background: black;
     color: #fff;
     font-size: 1.3rem;
     border: none;
     padding: 10px 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
 }
-
+.form-lbl{
+    font-size: 1.3rem;
+}
 /* -----------------------------------------------------     About Page Styles ----------------------------------------------------*/
 .about-msg{
     font-size: 2rem;
@@ -118,36 +121,54 @@ a:hover{
     max-width: 60%;
     padding: 10px;
     align-items: center;
-    border-bottom: 1px solid salmon;
+    border-bottom: 1px solid black;
 }
 
 .note {
     font-size: 1.4rem;
+    font-family: 'Lexend', sans-serif
 }
 
 .delete{
     display: inline-block;
     padding: 5px 10px;
-    background: salmon;
+    background: black;
     color: #fff;
     border-radius: 10px;
 }
 
 /* Error/Success Message styles */
 .error{
-    display: inline-block;
-    padding: 15px;
-    border: 1px dotted red;
+    border: 1px solid  red;
     font-size: 1.5rem;
     color: red;
     margin: 10px 0;
 }
-
-.success{
+.success, .error {
     display: inline-block;
     padding: 15px;
-    border: 1px dotted green;
-    font-size: 1.5rem;
-    color: green;
     margin: 10px 0;
+    font-size: 1.5rem;
 }
+.success{
+    border: 1px solid green;
+    color: green;
+}
+
+.note:hover{
+    color: #307797;
+}
+
+/*   ---------------------------------------------------- Detail Page Styles ---------------------------------------*/
+
+.detail-title, .author {
+    font-size: 2rem;
+}
+.detail-par, .description {
+    font-size: 2rem;
+}
+
+.description {
+    margin-top: 10px;
+}
+

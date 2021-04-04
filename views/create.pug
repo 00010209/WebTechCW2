@@ -5,19 +5,19 @@ block content
     h1 Create note 
 
     if error 
-      p.error Some error has occured 
+      p.error Please fill in all the fields.
 
     if success 
       p.success Note has successfully been created! 
       
     form.form(action="/create" method='POST') 
-      label Title 
-      input.input(type="text" name='title')
+      label.form-lbl Title 
+      input.input(type="text" name='title' required)
 
-      label Author 
-      input.input(type="text" name="author")
+      label.form-lbl Author 
+      input.input(type="text" name="author" required)
 
-      label Description
-      textarea.input(type="text" name="description")
+      label.form-lbl Description
+      textarea.input(type="text" name="description" required)
 
       button.btn Create Note

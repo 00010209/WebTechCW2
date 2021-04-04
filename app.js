@@ -28,7 +28,7 @@ app.post('/create', (req, res) => {
     const title = req.body.title
     const author = req.body.author
     const description = req.body.description
-    
+    //Validating inputs with simple, yet effective IF statements
     if (title.trim() === '' && author.trim() === '' && description.trim() === ''){
         res.render('create', { error: true })
     } else {
