@@ -1,4 +1,3 @@
-const { json } = require('express')
 const express = require('express')
 const app = express()
 
@@ -11,6 +10,13 @@ app.set('view engine', 'pug')
 app.use('/static', express.static('public'))
 
 app.use(express.urlencoded({extended: false}))
+
+//Expreimental Codes
+const DB = './data/notes.json'
+const notesRouter = require('./routes/notes.js')
+
+app.use('/notes', notesRouter)
+//End
 
 app.get('/', (req, res) => {
     res.render('home')
@@ -67,38 +73,38 @@ app.get('/api/v1/notes', (req, res) => {
 })
 
 
-app.get('/notes', (req, res) =>{
-    fs.readFile('./data/notes.json', (err, data) => {
-        if (err) throw err 
+// app.get('/notes', (req, res) =>{
+//     fs.readFile('./data/notes.json', (err, data) => {
+//         if (err) throw err 
 
-        const notes = JSON.parse(data)
+//         const notes = JSON.parse(data)
 
-        res.render('notes', {notes: notes})
+//         res.render('notes', {notes: notes})
 
-    })
-})
+//     })
+// })
 
-app.get('/notes/:id', (req,res) =>{
-    const id = req.params.id 
+// app.get('/notes/:id', (req,res) =>{
+//     const id = req.params.id 
 
-    fs.readFile('./data/notes.json', (err, data) => {
-        if (err) throw err 
+//     fs.readFile('./data/notes.json', (err, data) => {
+//         if (err) throw err 
 
-        const notes = JSON.parse(data)
+//         const notes = JSON.parse(data)
 
-        const note = notes.filter(note => note.id == id)[0]
+//         const note = notes.filter(note => note.id == id)[0]
 
-        res.render('detail', { note: note})
-    })
-})
-
+//         res.render('detail', { note: note})
+//     })
+// })
+//Creating http server
 app.listen(8000, err => {
     if (err) console.log(err)
 
     console.log('Server is running on port 8000')
 })
 
-
+//Random id generating function
 function id () {
     return '_' + Math.random().toString(36).substr(2, 9);
   };

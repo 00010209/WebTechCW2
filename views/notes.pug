@@ -4,7 +4,14 @@ block content
   div.container 
     h1 All notes
 
-    each note in notes 
-      div.note-wrapper 
-        a.note(href=`/notes/${ note.id }`) #{ note.title }
-        a.delete(href='#') Delete
+
+    if deleted
+      p.success Deleted!
+    if notes
+      each note in notes 
+        div.note-wrapper 
+          a.note(href=`/notes/${ note.id }`) #{ note.title }
+          a.delete(href=`/notes/${ note.id }/delete`) Delete
+
+    else
+      h3 No notes left to delete

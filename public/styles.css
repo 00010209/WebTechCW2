@@ -54,7 +54,7 @@ a:hover{
     padding: 100px 0 30px 0;
 }
 
-.featured {
+.featured, .featured2 {
     display: inline-block;
     padding: 10px 20px;
     background: black;
@@ -111,6 +111,11 @@ a:hover{
     max-width: 70%;
     padding: 30px 0 10px 0;
 }
+
+.featured2 {
+    margin-right: 50px;
+}
+
 
 
 /* --------------------------------------------------- Notes page Styles  -------------------------------------------*/
