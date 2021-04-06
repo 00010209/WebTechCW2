@@ -103,7 +103,7 @@ a:hover{
     border-radius: 10px;
 }
 .form-lbl{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 /* -----------------------------------------------------     About Page Styles ----------------------------------------------------*/
 .about-msg{
@@ -145,9 +145,7 @@ a:hover{
 /* Error/Success Message styles */
 .error{
     border: 1px solid  red;
-    font-size: 1.5rem;
     color: red;
-    margin: 10px 0;
 }
 .success, .error {
     display: inline-block;
@@ -166,10 +164,7 @@ a:hover{
 
 /*   ---------------------------------------------------- Detail Page Styles ---------------------------------------*/
 
-.detail-title, .author {
-    font-size: 2rem;
-}
-.detail-par, .description {
+.detail-title, .author, .detail-par, .description {
     font-size: 2rem;
 }
 
